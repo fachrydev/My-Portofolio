@@ -111,3 +111,85 @@ toggle.addEventListener("change",()=>{
 document.body.classList.toggle("dark-mode");
 
 });
+const journeyFolder =
+document.getElementById("journeyFolder");
+
+const journeyArchive =
+document.getElementById("journeyArchive");
+
+const closeJourney =
+document.getElementById("closeJourney");
+
+if(journeyFolder){
+
+journeyFolder.addEventListener("click",()=>{
+
+journeyFolder.classList.add("folder-hide");
+
+setTimeout(()=>{
+
+journeyArchive.classList.remove("hidden");
+
+journeyArchive.classList.add("archive-show");
+
+},500);
+
+});
+
+}
+
+if(closeJourney){
+
+closeJourney.addEventListener("click",()=>{
+
+journeyArchive.classList.remove("archive-show");
+
+journeyArchive.classList.add("archive-hide");
+
+setTimeout(()=>{
+
+journeyArchive.classList.add("hidden");
+
+journeyArchive.classList.remove("archive-hide");
+
+journeyFolder.classList.remove("folder-hide");
+
+},500);
+
+});
+
+}
+const journeyContainer =
+document.querySelector(".journey-cards");
+
+const journeyPrev =
+document.getElementById("journeyPrev");
+
+const journeyNext =
+document.getElementById("journeyNext");
+
+if(journeyContainer){
+
+journeyNext.addEventListener("click",()=>{
+
+journeyContainer.scrollBy({
+
+left:380,
+behavior:"smooth"
+
+});
+
+});
+
+journeyPrev.addEventListener("click",()=>{
+
+journeyContainer.scrollBy({
+
+left:-380,
+behavior:"smooth"
+
+});
+
+});
+
+}
