@@ -154,7 +154,7 @@ width:100%;
 
 height:100%;
 
-background:url("images/beach-daytime.jpeg");
+background:url("beach-daytime.jpeg");
 
 background-size:cover;
 
@@ -170,7 +170,7 @@ transition:1s ease;
 
 body.dark-mode .bg-scene{
 
-background:url("images/beach-night.jpeg");
+background:url("beach-night.jpeg");
 
 background-size:cover;
 
@@ -2925,7 +2925,7 @@ border:
         rgba(16,28,40,.92),
         rgba(10,18,28,.96)
     ),
-    url("images/beach-night.jpeg");
+    url("beach-night.jpeg");
 
     background-size:cover;
     background-position:center;
