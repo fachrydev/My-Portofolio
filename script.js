@@ -193,3 +193,26 @@ behavior:"smooth"
 });
 
 }
+window.addEventListener("scroll",()=>{
+
+const nav=document.querySelector(".navbar");
+
+if(window.scrollY>60){
+
+nav.style.padding="12px 24px";
+
+nav.style.background="rgba(8,40,80,.82)";
+
+nav.style.boxShadow="0 18px 40px rgba(0,0,0,.4)";
+
+}else{
+
+nav.style.padding="18px 28px";
+
+nav.style.background="rgba(14,56,105,.55)";
+
+nav.style.boxShadow="0 20px 45px rgba(0,0,0,.28)";
+
+}
+
+});
