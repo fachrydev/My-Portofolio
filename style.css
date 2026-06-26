@@ -154,7 +154,7 @@ width:100%;
 
 height:100%;
 
-background:url("beach-daytime.jpeg");
+background:url("images/beach-daytime.jpeg");
 
 background-size:cover;
 
@@ -170,7 +170,7 @@ transition:1s ease;
 
 body.dark-mode .bg-scene{
 
-background:url("beach-night.jpeg");
+background:url("images/beach-night.jpeg");
 
 background-size:cover;
 
@@ -2925,7 +2925,7 @@ border:
         rgba(16,28,40,.92),
         rgba(10,18,28,.96)
     ),
-    url("beach-night.jpeg");
+    url("images/beach-night.jpeg");
 
     background-size:cover;
     background-position:center;
@@ -4186,5 +4186,1834 @@ opacity:.7;
 transform:scale(1);
 
 opacity:1;
+
+}
+/*==============================
+ PREMIUM NAVBAR
+==============================*/
+
+.navbar{
+
+position:fixed;
+top:25px;
+left:50%;
+
+transform:translateX(-50%);
+
+width:92%;
+max-width:1500px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:18px 28px;
+
+border-radius:70px;
+
+background:rgba(14,56,105,.55);
+
+backdrop-filter:blur(22px);
+
+-webkit-backdrop-filter:blur(22px);
+
+border:1px solid rgba(255,255,255,.18);
+
+box-shadow:
+
+0 20px 45px rgba(0,0,0,.28),
+
+0 0 30px rgba(58,170,255,.18);
+
+z-index:999;
+
+overflow:hidden;
+
+transition:.45s;
+
+}
+.navbar::before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:0;
+
+width:100%;
+height:3px;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+#45d8ff,
+
+#6fc9ff,
+
+#45d8ff,
+
+transparent
+
+);
+
+opacity:.7;
+
+animation:wave 5s linear infinite;
+
+}
+
+@keyframes wave{
+
+0%{
+
+transform:translateX(-40%);
+}
+
+100%{
+
+transform:translateX(40%);
+}
+
+}
+.nav-logo{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+.logo-circle{
+
+width:72px;
+height:72px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+font-size:34px;
+
+background:
+
+linear-gradient(
+
+145deg,
+
+#1f74ff,
+
+#57c8ff
+
+);
+
+color:white;
+
+box-shadow:
+
+0 0 25px rgba(80,170,255,.5);
+
+}
+
+.logo-text h3{
+
+font-size:31px;
+
+color:white;
+
+}
+
+.logo-text span{
+
+color:#4fc5ff;
+
+}
+
+.logo-text p{
+
+font-size:12px;
+
+letter-spacing:4px;
+
+color:#b6dfff;
+
+text-transform:uppercase;
+
+}
+.nav-menu a:hover{
+
+background:rgba(255,255,255,.12);
+
+transform:translateY(-3px);
+
+}
+.nav-menu a.active{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#3ea7ff,
+
+#2c79ff
+
+);
+
+box-shadow:
+
+0 8px 20px rgba(54,145,255,.45);
+
+}
+
+.nav-menu a.active::after{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+bottom:-16px;
+
+transform:translateX(-50%);
+
+width:70%;
+
+height:5px;
+
+border-radius:20px;
+
+background:#58d8ff;
+
+box-shadow:
+
+0 0 12px #58d8ff;
+
+}
+.theme-switch{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+color:white;
+
+}
+.nav-menu{
+
+display:flex;
+
+gap:18px;
+
+align-items:center;
+
+}
+.sun,
+.moon{
+
+font-size:22px;
+
+}
+.nav-menu{
+    gap:2px;
+}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.nav-menu a{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    padding:12px 18px;
+
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+
+    border-radius:18px;
+
+    transition:all .35s ease;
+
+}
+.nav-menu a:hover{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    transform:translateY(-2px);
+
+}
+.nav-menu a.active{
+
+    background:linear-gradient(
+        135deg,
+        #2f8fff,
+        #52c8ff
+    );
+
+    box-shadow:
+        0 8px 25px rgba(53,151,255,.35);
+
+}
+.nav-menu a.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    bottom:-10px;
+
+    transform:translateX(-50%);
+
+    width:45px;
+    height:4px;
+
+    border-radius:999px;
+
+    background:#67d5ff;
+
+    box-shadow:0 0 12px #67d5ff;
+
+}
+/* =========================================================
+   RESPONSIVE.CSS
+   PART 1
+   Navbar + Hero + About + Skills + Community
+=========================================================*/
+
+@media (max-width:1200px){
+
+.navbar{
+
+width:94%;
+padding:14px 20px;
+
+}
+
+.nav-logo h3{
+
+font-size:22px;
+
+}
+
+.nav-menu{
+
+gap:4px;
+
+}
+
+.nav-menu a{
+
+padding:10px 12px;
+font-size:14px;
+
+}
+
+.hero-container{
+
+gap:70px;
+
+}
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+.hero-right img{
+
+max-width:420px;
+
+}
+
+}
+
+
+
+/* ========================================== */
+
+@media (max-width:992px){
+
+.navbar{
+
+width:96%;
+padding:12px 16px;
+
+}
+
+.logo-circle{
+
+width:55px;
+height:55px;
+
+font-size:24px;
+
+}
+
+.logo-text h3{
+
+font-size:20px;
+
+}
+
+.logo-text p{
+
+display:none;
+
+}
+
+.nav-menu{
+
+overflow-x:auto;
+scrollbar-width:none;
+
+}
+
+.nav-menu::-webkit-scrollbar{
+
+display:none;
+
+}
+
+.nav-menu a{
+
+flex-shrink:0;
+
+padding:10px 14px;
+
+font-size:14px;
+
+}
+
+.hero{
+
+padding-top:150px;
+
+}
+
+.hero-container{
+
+display:flex;
+flex-direction:column;
+
+text-align:center;
+
+gap:60px;
+
+}
+
+.hero-left{
+
+width:100%;
+
+}
+
+.hero-right{
+
+width:100%;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-right img{
+
+width:75%;
+max-width:380px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-badges{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-trust{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.hero-stats{
+
+grid-template-columns:
+
+repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.hero-floating-card{
+
+display:none;
+
+}
+
+}
+
+
+
+/* ========================================== */
+
+@media(max-width:768px){
+
+section{
+
+padding:90px 7%;
+
+}
+
+.section-heading{
+
+text-align:center;
+
+}
+
+.section-heading h2{
+
+font-size:34px;
+
+line-height:1.3;
+
+}
+
+.section-heading p{
+
+font-size:16px;
+
+}
+
+.hero h1{
+
+font-size:44px;
+
+line-height:1.2;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.hero-right img{
+
+width:85%;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+width:100%;
+max-width:280px;
+
+text-align:center;
+
+}
+
+.hero-badges{
+
+gap:10px;
+
+}
+
+.hero-badges span{
+
+font-size:13px;
+
+padding:8px 14px;
+
+}
+
+.hero-trust{
+
+gap:12px;
+
+}
+
+.hero-stats{
+
+grid-template-columns:1fr;
+
+}
+
+.community-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:16px;
+
+}
+
+.about-grid{
+
+display:flex;
+
+flex-direction:column;
+
+gap:35px;
+
+}
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.skills-wrapper{
+
+grid-template-columns:1fr;
+
+gap:22px;
+
+}
+
+.skill-card{
+
+padding:28px;
+
+}
+
+}
+
+
+
+/* ========================================== */
+
+@media(max-width:576px){
+
+.navbar{
+
+top:15px;
+
+border-radius:22px;
+
+padding:10px;
+
+}
+
+.logo-circle{
+
+width:48px;
+
+height:48px;
+
+font-size:22px;
+
+}
+
+.logo-text h3{
+
+font-size:18px;
+
+}
+
+.nav-menu{
+
+gap:5px;
+
+}
+
+.nav-menu a{
+
+padding:9px 11px;
+
+font-size:13px;
+
+border-radius:12px;
+
+}
+
+.nav-menu a i{
+
+font-size:13px;
+
+}
+
+.theme-switch{
+
+margin-left:10px;
+
+}
+
+.hero{
+
+padding-top:130px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.hero-right img{
+
+width:100%;
+
+max-width:300px;
+
+}
+
+.community-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.community-card{
+
+padding:20px;
+
+}
+
+.hero-badges{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+width:100%;
+
+}
+
+.hero-badges span{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.hero-trust{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+}
+
+.hero-trust .trust-item{
+
+justify-content:center;
+
+}
+
+.stat-box{
+
+padding:22px;
+
+}
+
+.stat-box h3{
+
+font-size:30px;
+
+}
+
+.stat-box span{
+
+font-size:14px;
+
+}
+
+.about-card,
+.skills-card{
+
+padding:28px;
+
+}
+
+.skill-item{
+
+font-size:14px;
+
+}
+
+}
+
+
+
+/* ========================================== */
+
+img{
+
+max-width:100%;
+height:auto;
+display:block;
+
+}
+
+button{
+
+cursor:pointer;
+
+}
+
+body{
+
+overflow-x:hidden;
+
+}
+
+*{
+
+max-width:100%;
+
+box-sizing:border-box;
+
+}
+/* =========================================================
+   RESPONSIVE.CSS
+   PART 2
+   Recognition + Web3 + Community + Education
+   Services + Process
+=========================================================*/
+
+
+/* =========================
+TABLET
+========================= */
+
+@media (max-width:992px){
+
+/* Recognition */
+
+.recognition-card{
+
+display:flex;
+flex-direction:column;
+
+text-align:center;
+
+gap:30px;
+
+padding:35px;
+
+}
+
+.recognition-icon{
+
+margin:auto;
+
+}
+
+
+/* WEB3 */
+
+.web3-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:24px;
+
+}
+
+.web3-card{
+
+padding:28px;
+
+}
+
+
+/* COMMUNITY */
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+.stat-card{
+
+padding:28px;
+
+}
+
+
+/* EDUCATION */
+
+.education-header{
+
+text-align:center;
+
+max-width:700px;
+
+margin:auto auto 50px;
+
+}
+
+.education-points{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+}
+
+.cert-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:24px;
+
+}
+
+.cert-card{
+
+padding:30px;
+
+min-height:100%;
+
+}
+
+.card-tags{
+
+flex-wrap:wrap;
+
+}
+
+
+/* SERVICES */
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+
+/* PROCESS */
+
+.process-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+.process-card{
+
+padding:30px;
+
+}
+
+}
+
+
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width:768px){
+
+
+.web3-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.cert-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.process-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.education-points{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+}
+
+
+.point{
+
+padding:14px;
+
+font-size:14px;
+
+}
+
+
+.cert-card{
+
+padding:26px;
+
+border-radius:22px;
+
+}
+
+
+.card-number{
+
+font-size:40px;
+
+}
+
+
+.cert-card h3{
+
+font-size:22px;
+
+}
+
+
+.cert-level{
+
+margin:15px 0;
+
+}
+
+
+.cert-card ul{
+
+padding-left:20px;
+
+}
+
+
+.card-tags{
+
+margin-top:20px;
+
+gap:10px;
+
+}
+
+
+.card-tags span{
+
+padding:8px 14px;
+
+font-size:13px;
+
+}
+
+
+.service-card{
+
+padding:28px;
+
+}
+
+
+.service-card i{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+
+.process-card h3{
+
+font-size:42px;
+
+}
+
+}
+
+
+
+
+/* =========================
+SMALL PHONE
+========================= */
+
+@media(max-width:480px){
+
+
+.education-header h2{
+
+font-size:30px;
+
+}
+
+
+.education-header p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+
+.education-points{
+
+grid-template-columns:1fr;
+
+}
+
+
+.point{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+
+.cert-card{
+
+padding:22px;
+
+}
+
+
+.card-number{
+
+font-size:34px;
+
+}
+
+
+.cert-card h3{
+
+font-size:20px;
+
+}
+
+
+.cert-card p{
+
+font-size:15px;
+
+}
+
+
+.cert-card li{
+
+font-size:14px;
+
+margin-bottom:10px;
+
+}
+
+
+.web3-card{
+
+padding:22px;
+
+}
+
+
+.stat-card{
+
+padding:22px;
+
+}
+
+
+.service-card{
+
+padding:24px;
+
+}
+
+
+.process-card{
+
+padding:24px;
+
+}
+
+}
+/*=========================================================
+RESPONSIVE.CSS
+PART 3
+Portfolio + Journey + Contact + Footer
+=========================================================*/
+
+
+/* ===========================
+Laptop
+=========================== */
+
+@media(max-width:1200px){
+
+.project-deck{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:28px;
+
+}
+
+.main-project-card{
+
+min-height:350px;
+
+}
+
+.journey-wrapper{
+
+padding:0 25px;
+
+}
+
+}
+
+
+
+/* ===========================
+Tablet
+=========================== */
+
+@media(max-width:992px){
+
+.main-project-card{
+
+width:100%;
+
+max-width:700px;
+
+margin:auto;
+
+min-height:320px;
+
+}
+
+.main-project-content{
+
+padding:40px;
+
+text-align:center;
+
+}
+
+.project-deck{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:30px;
+
+}
+
+.project-card{
+
+display:flex;
+
+flex-direction:column;
+
+overflow:hidden;
+
+}
+
+.project-image{
+
+height:280px;
+
+}
+
+.project-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.project-content{
+
+padding:28px;
+
+}
+
+.close-deck{
+
+position:fixed;
+
+top:25px;
+
+right:25px;
+
+z-index:1000;
+
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+}
+
+.contact-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:22px;
+
+}
+
+.footer-content{
+
+padding:60px 30px;
+
+}
+
+}
+
+
+
+/* ===========================
+Mobile
+=========================== */
+
+@media(max-width:768px){
+
+.section-header{
+
+text-align:center;
+
+}
+
+.section-header h2{
+
+font-size:34px;
+
+}
+
+.main-project-card{
+
+min-height:280px;
+
+border-radius:26px;
+
+}
+
+.main-project-content{
+
+padding:30px;
+
+}
+
+.main-project-content h3{
+
+font-size:30px;
+
+}
+
+.project-deck{
+
+display:flex;
+
+flex-direction:column;
+
+gap:24px;
+
+}
+
+.project-card{
+
+border-radius:22px;
+
+}
+
+.project-image{
+
+height:220px;
+
+}
+
+.project-content{
+
+padding:24px;
+
+}
+
+.project-content h3{
+
+font-size:25px;
+
+}
+
+.project-block{
+
+margin-top:20px;
+
+}
+
+.close-deck{
+
+top:18px;
+
+right:18px;
+
+width:50px;
+
+height:50px;
+
+font-size:20px;
+
+}
+
+
+/* Journey */
+
+.journey-section{
+
+overflow:hidden;
+
+}
+
+.folder-window{
+
+width:100%;
+
+}
+
+.folder-content{
+
+padding:20px;
+
+}
+
+.journey-cards{
+
+display:flex;
+
+overflow-x:auto;
+
+gap:18px;
+
+scroll-snap-type:x mandatory;
+
+padding-bottom:18px;
+
+scrollbar-width:none;
+
+}
+
+.journey-cards::-webkit-scrollbar{
+
+display:none;
+
+}
+
+.journey-card{
+
+flex:0 0 88%;
+
+scroll-snap-align:center;
+
+padding:24px;
+
+min-height:280px;
+
+}
+
+.journey-card h3{
+
+font-size:23px;
+
+}
+
+.journey-card p{
+
+font-size:15px;
+
+line-height:1.7;
+
+}
+
+.folder-nav{
+
+margin-top:25px;
+
+display:flex;
+
+justify-content:center;
+
+gap:16px;
+
+flex-wrap:wrap;
+
+}
+
+
+/* Contact */
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-card{
+
+padding:28px;
+
+}
+
+.contact-card h3{
+
+font-size:22px;
+
+}
+
+
+/* Footer */
+
+.footer{
+
+padding:70px 20px 40px;
+
+text-align:center;
+
+}
+
+.footer-content{
+
+padding:0;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:18px;
+
+}
+
+.footer h3{
+
+font-size:30px;
+
+}
+
+.footer p{
+
+font-size:15px;
+
+}
+
+}
+
+
+
+/* ===========================
+Small Phone
+=========================== */
+
+@media(max-width:480px){
+
+.main-project-card{
+
+min-height:240px;
+
+}
+
+.main-project-content{
+
+padding:22px;
+
+}
+
+.main-project-content h3{
+
+font-size:26px;
+
+}
+
+.main-project-content p{
+
+font-size:15px;
+
+}
+
+.project-image{
+
+height:190px;
+
+}
+
+.project-content{
+
+padding:20px;
+
+}
+
+.project-content h3{
+
+font-size:22px;
+
+}
+
+.project-block span{
+
+font-size:14px;
+
+}
+
+.project-block p{
+
+font-size:14px;
+
+line-height:1.6;
+
+}
+
+.close-deck{
+
+width:46px;
+
+height:46px;
+
+font-size:18px;
+
+top:15px;
+
+right:15px;
+
+}
+
+
+/* Journey */
+
+.journey-card{
+
+flex:0 0 94%;
+
+padding:20px;
+
+}
+
+.folder-nav button{
+
+width:48px;
+
+height:48px;
+
+font-size:18px;
+
+}
+
+
+/* Contact */
+
+.contact-card{
+
+padding:22px;
+
+}
+
+.contact-card i{
+
+font-size:32px;
+
+}
+
+.contact-card h3{
+
+font-size:20px;
+
+}
+
+
+/* Footer */
+
+.footer-social a{
+
+width:48px;
+
+height:48px;
+
+font-size:18px;
+
+}
+
+}
+
+
+
+/* ===========================
+Universal Fix
+=========================== */
+
+html{
+
+overflow-x:hidden;
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+overflow-x:hidden;
+
+}
+
+section{
+
+overflow:hidden;
+
+}
+
+.project-card,
+.cert-card,
+.skill-card,
+.service-card,
+.web3-card,
+.stat-card,
+.contact-card,
+.process-card{
+
+max-width:100%;
+
+}
+
+.project-image img,
+.hero img{
+
+display:block;
+
+width:100%;
+
+height:auto;
+
+}
+
+*{
+
+-webkit-tap-highlight-color:transparent;
+
+}
+
+button,
+a{
+
+touch-action:manipulation;
+
+}
+
+input,
+textarea,
+button{
+
+font:inherit;
+
+}
+
+img{
+
+user-select:none;
+
+pointer-events:none;
 
 }
