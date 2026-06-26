@@ -57,7 +57,7 @@ openDeck.addEventListener("click", () => {
 
     setTimeout(() => {
 
-        openDeck.style.display = "none";
+        openDeck.classList.add("hide-card");
 
         projectDeck.classList.remove("hidden");
 
@@ -69,7 +69,7 @@ closeDeck.addEventListener("click", () => {
 
     projectDeck.classList.add("hidden");
 
-    openDeck.style.display = "flex";
+    openDeck.classList.remove("hide-card");
 
     setTimeout(() => {
 
